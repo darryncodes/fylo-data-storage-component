@@ -1,0 +1,31 @@
+// Colors
+
+// Primary
+
+$peach: hsl(6, 100%, 80%);
+$pink: hsl(335, 100%, 65%);
+
+// Neutral
+
+$pale-blue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+
+// Responsive breakpoint
+
+$bp-desktop: 56.25em; // 900px
+
+html {
+    font-size: 50%; //1rem = 8px
+
+    @media only screen and (min-width: $bp-desktop) {
+        font-size: 62.5%; //1rem = 10px
+    }
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
