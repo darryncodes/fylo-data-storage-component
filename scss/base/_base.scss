@@ -7,6 +7,8 @@ $pink: hsl(335, 100%, 65%);
 
 // Neutral
 
+$white: #fff;
+$white-2: rgba(255, 255, 255, 0.75);
 $pale-blue: hsl(243, 100%, 93%);
 $grayish-blue: hsl(229, 7%, 55%);
 $dark-blue: hsl(228, 56%, 26%);
@@ -14,6 +16,7 @@ $very-dark-blue: hsl(229, 57%, 11%);
 
 // Responsive breakpoint
 
+$bp-tablet: 37.5em; // 900px
 $bp-desktop: 56.25em; // 900px
 
 html {
@@ -28,4 +31,34 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
+    color: $white;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    background: $dark-blue url(../img/bg-mobile.png) no-repeat bottom;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        background-image: url(../img/bg-desktop.png);
+    }
+}
+
+.attribution {
+    margin: 5rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+
+    &__link {
+        color: $white-2;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
