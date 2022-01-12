@@ -19,19 +19,60 @@
 
 <body>
 
-
-    You’ve used 815 GB of your storage
-
-    185 GB Left
-
-    0 GB
-    1000 GB
+    <main>
+        <h1 class="sr-only">Fylo data storage</h1>
+        <article class="wrapper">
+            <div class="container">
+                <img src="img/logo.svg" class="logo" alt="Fylo logo">
+                <div class="card">
+                    <ul class="card__list">
+                        <li class="card__item">
+                            <button class="btn" aria-label="Attach document">
+                                <img src="img/icon-document.svg" class="btn__icon" alt="Attach document icon">
+                            </button>
+                        </li>
+                        <li class="card__item">
+                            <button class="btn" aria-label="Create new folder">
+                                <img src="img/icon-folder.svg" class="btn__icon" alt="Create folder icon">
+                            </button>
+                        </li>
+                        <li class="card__item">
+                            <button class="btn" aria-label="Upload your data">
+                                <img src="img/icon-upload.svg" class="btn__icon" alt="Upload data icon">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <p class="content__description">You’ve used <span class="content__description--highlight">815 GB</span>
+                    of your storage</p>
+                <div class="slider">
+                    <input type="range" min="1" max="100" value="75" class="slider__input" id="storage" name="storage">
+                    <label for="storage" class="sr-only"></label>
+                </div>
+                <div class="info">
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
+                <div class="popup">
+                    <p>
+                        <span class="popup__amount">185</span>
+                        <span class="popup__description">GB Left</span>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
 
     <footer class="attribution">
-        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                class="attribution__link">Frontend Mentor</a>.
+            Coded by <a href="https://www.darryncodes.co.uk/" target="_blank"
+                class="attribution__link">@darryncodes</a>.
         </p>
     </footer>
+
 </body>
 
 </html>
