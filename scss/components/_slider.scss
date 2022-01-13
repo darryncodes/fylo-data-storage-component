@@ -1,0 +1,59 @@
+@use "../base/base" as *;
+
+.slider {
+    background-color: $very-dark-blue;
+    height: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+
+    &__input {
+        width: 80%;
+        appearance: none;
+        outline: none;
+        height: 14px;
+        background: linear-gradient(90deg, $peach 20%, $pink 80%);
+        cursor: pointer;
+        border-radius: 20px;
+
+        &:focus {
+            outline: 3px solid $white;
+        }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            background-color: $white;
+            cursor: pointer;
+            border-radius: 50%;
+
+            &:active {
+                background-color: $very-dark-blue;
+            }
+
+            &:active,
+            &:hover {
+                box-shadow: 0 10px 25px -3px rgba($white, 0.6);
+            }
+        }
+
+        &::-moz-range-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            border: none;
+            width: 10px;
+            height: 10px;
+            background-color: $white;
+            cursor: pointer;
+            border-radius: 50%;
+
+            &:active,
+            &:hover {
+                box-shadow: 0 10px 25px -3px rgba($white, 0.6);
+            }
+        }
+    }
+}

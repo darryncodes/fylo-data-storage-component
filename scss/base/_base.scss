@@ -48,11 +48,12 @@ body {
     @media only screen and (min-width: $bp-tablet) {
         background-image: url(../img/bg-desktop.png);
         background-size: contain;
+        font-size: 1.6rem;
     }
 }
 
 .attribution {
-    margin: 5rem 0;
+    margin-top: 5rem;
     font-size: 1.4rem;
     text-align: center;
 

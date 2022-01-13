@@ -1,15 +1,30 @@
 @use "../base/base" as *;
 
+.wrapper {
+    @media only screen and (min-width: $bp-tablet) {
+        display: flex;
+    }
+}
+
 .container,
 .content {
     background-color: $dark-blue;
     border-radius: 1.2rem;
     padding: 4rem 5rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        padding: 3rem 5rem;
+    }
 }
 
 .container {
     border-top-right-radius: 40%;
     margin-bottom: 3rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        margin-bottom: 0;
+        margin-right: 3rem;
+    }
 }
 
 .card {
@@ -64,9 +79,18 @@
         color: $white-2;
         margin-bottom: 2rem;
 
+        @media only screen and (min-width: $bp-tablet) {
+            margin: 3rem 0;
+        }
+
         &--highlight {
             color: $white;
         }
+    }
+
+    @media only screen and (min-width: $bp-tablet) {
+        min-width: 60rem;
+        padding-bottom: 0;
     }
 }
 
@@ -91,6 +115,23 @@
     right: 50%;
     bottom: -30px;
     transform: translateX(50%);
+
+    @media only screen and (min-width: $bp-tablet) {
+        right: 50px;
+        bottom: 170px;
+        transform: translateX(0);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -30px;
+        width: 0;
+        height: 0;
+        border-top: 50px solid $white;
+        border-left: 50px solid transparent;
+    }
 
     &__amount {
         font-size: 4rem;
