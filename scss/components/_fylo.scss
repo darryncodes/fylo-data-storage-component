@@ -1,1 +1,103 @@
 @use "../base/base" as *;
+
+.container,
+.content {
+    background-color: $dark-blue;
+    border-radius: 1.2rem;
+    padding: 4rem 5rem;
+}
+
+.container {
+    border-top-right-radius: 40%;
+    margin-bottom: 3rem;
+}
+
+.card {
+    margin-top: 4rem;
+
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.btn {
+    background: none;
+    border: none;
+    outline: none;
+
+    background-color: $very-dark-blue;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    height: 5.5rem;
+    width: 5.5rem;
+
+    cursor: pointer;
+
+    &:focus {
+        outline: 3px solid $white;
+        border-radius: 1.2rem;
+    }
+
+    &__icon {
+        height: auto;
+        width: 4rem;
+    }
+}
+
+.content {
+    padding-bottom: 8rem;
+
+    position: relative;
+
+    &__description {
+        color: $white-2;
+        margin-bottom: 2rem;
+
+        &--highlight {
+            color: $white;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $black;
+    background-color: $white;
+    border-radius: 1.2rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 50%;
+    bottom: -30px;
+    transform: translateX(50%);
+
+    &__amount {
+        font-size: 4rem;
+    }
+
+    &__description {
+        color: $grayish-blue;
+        margin-left: 1rem;
+    }
+}
