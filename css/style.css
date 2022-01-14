@@ -45,15 +45,21 @@ body {
 }
 
 .attribution {
-  margin-top: 5rem;
+  position: absolute;
+  bottom: 30px;
   font-size: 1.4rem;
   text-align: center;
 }
 .attribution__link {
   color: rgba(255, 255, 255, 0.75);
+  outline: none;
 }
 .attribution__link:hover {
   text-decoration: none;
+}
+.attribution__link:focus {
+  outline: 2px solid #fff;
+  border-radius: 0.4rem;
 }
 
 @-webkit-keyframes slider {

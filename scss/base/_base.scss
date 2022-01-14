@@ -57,15 +57,22 @@ body {
 }
 
 .attribution {
-    margin-top: 5rem;
+    position: absolute;
+    bottom: 30px;
     font-size: 1.4rem;
     text-align: center;
 
     &__link {
         color: $white-2;
+        outline: none;
 
         &:hover {
             text-decoration: none;
+        }
+
+        &:focus {
+            outline: 2px solid $white;
+            border-radius: 0.4rem;
         }
     }
 }
