@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I used this challenge to learn more abbout accessibility. I focused on using the correct semantic mark up, custom focus states, aria-label and ensured I removed all animations, transitions and smooth scroll for people that prefer not to see them.
+I used this challenge to learn more about accessibility. I focused on using the correct semantic mark up, custom focus states, aria-label and ensured I removed all animations, transitions and smooth scroll for people that prefer not to see them.
 
 -   [When to use aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
