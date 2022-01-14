@@ -3,6 +3,7 @@
 .wrapper {
     @media only screen and (min-width: $bp-tablet) {
         display: flex;
+        align-items: flex-end;
     }
 }
 
@@ -10,16 +11,12 @@
 .content {
     background-color: $dark-blue;
     border-radius: 1.2rem;
-    padding: 4rem 5rem;
-
-    @media only screen and (min-width: $bp-tablet) {
-        padding: 3rem 5rem;
-    }
 }
 
 .container {
     border-top-right-radius: 40%;
     margin-bottom: 3rem;
+    padding: 4rem 5rem;
 
     @media only screen and (min-width: $bp-tablet) {
         margin-bottom: 0;
@@ -80,13 +77,12 @@
 }
 
 .content {
-    padding-bottom: 7rem;
+    padding: 3rem;
 
     position: relative;
 
     &__description {
         color: $white-2;
-        margin-bottom: 2rem;
 
         @media only screen and (min-width: $bp-tablet) {
             margin: 3rem 0;
@@ -100,7 +96,7 @@
 
     @media only screen and (min-width: $bp-tablet) {
         min-width: 60rem;
-        padding-bottom: 0;
+        padding-top: 0;
     }
 }
 
@@ -122,12 +118,12 @@
     align-items: center;
 
     position: absolute;
-    right: 100px;
-    bottom: -30px;
+    right: 80px;
+    bottom: -50px;
 
     @media only screen and (min-width: $bp-tablet) {
-        right: 50px;
-        bottom: 170px;
+        right: 32px;
+        bottom: 125px;
         transform: translateX(0);
     }
 
