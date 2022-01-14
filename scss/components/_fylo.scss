@@ -38,15 +38,13 @@
         padding: 0;
         margin: 0;
     }
-
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: none;
     border: none;
     outline: none;
@@ -59,19 +57,30 @@
 
     cursor: pointer;
 
+    transition: ease 0.3s;
+
     &:focus {
         outline: 3px solid $white;
         border-radius: 1.2rem;
     }
 
+    &:hover {
+        box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.2);
+    }
+
     &__icon {
         height: auto;
         width: 4rem;
+
+        &--document {
+            height: auto;
+            width: 2rem;
+        }
     }
 }
 
 .content {
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
 
     position: relative;
 
@@ -85,6 +94,7 @@
 
         &--highlight {
             color: $white;
+            font-weight: 700;
         }
     }
 
@@ -112,9 +122,8 @@
     align-items: center;
 
     position: absolute;
-    right: 50%;
+    right: 100px;
     bottom: -30px;
-    transform: translateX(50%);
 
     @media only screen and (min-width: $bp-tablet) {
         right: 50px;
@@ -122,15 +131,17 @@
         transform: translateX(0);
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        bottom: -30px;
-        width: 0;
-        height: 0;
-        border-top: 50px solid $white;
-        border-left: 50px solid transparent;
+    @media only screen and (min-width: $bp-tablet) {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -30px;
+            width: 0;
+            height: 0;
+            border-top: 50px solid $white;
+            border-left: 50px solid transparent;
+        }
     }
 
     &__amount {
@@ -141,4 +152,7 @@
         color: $grayish-blue;
         margin-left: 1rem;
     }
+
+    opacity: 0;
+    animation: popup 0.35s linear 2.5s forwards;
 }

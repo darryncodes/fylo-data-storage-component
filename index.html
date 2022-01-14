@@ -26,17 +26,18 @@
                 <img src="img/logo.svg" class="logo" alt="Fylo logo">
                 <div class="card">
                     <ul class="card__list">
-                        <li class="card__item">
+                        <li>
                             <button class="btn" aria-label="Attach document">
-                                <img src="img/icon-document.svg" class="btn__icon" alt="Attach document icon">
+                                <img src="img/icon-document.svg" class="btn__icon btn__icon--document"
+                                    alt="Attach document icon">
                             </button>
                         </li>
-                        <li class="card__item">
+                        <li>
                             <button class="btn" aria-label="Create new folder">
                                 <img src="img/icon-folder.svg" class="btn__icon" alt="Create folder icon">
                             </button>
                         </li>
-                        <li class="card__item">
+                        <li>
                             <button class="btn" aria-label="Upload your data">
                                 <img src="img/icon-upload.svg" class="btn__icon" alt="Upload data icon">
                             </button>
@@ -48,8 +49,7 @@
                 <p class="content__description">You’ve used <span class="content__description--highlight">815 GB</span>
                     of your storage</p>
                 <div class="slider">
-                    <input type="range" min="1" max="100" value="98" class="slider__input" id="storage" name="storage">
-                    <label for="storage" class="sr-only"></label>
+                    <meter min="0" max="100" value="80" title="GB" class="slider__bar"></meter>
                 </div>
                 <div class="info">
                     <p>0 GB</p>

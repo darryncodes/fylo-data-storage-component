@@ -17,11 +17,15 @@ $very-dark-blue: hsl(229, 57%, 11%);
 
 // Responsive breakpoint
 
-$bp-tablet: 37.5em; // 900px
-$bp-desktop: 56.25em; // 900px
+$bp-tablet: 53.125em; // 850px
+$bp-desktop: 62.5em; // 1000px
 
 html {
     font-size: 50%; //1rem = 8px
+
+    @media only screen and (min-width: $bp-tablet) {
+        font-size: 56.25%; //1rem = 9px
+    }
 
     @media only screen and (min-width: $bp-desktop) {
         font-size: 62.5%; //1rem = 10px
@@ -47,7 +51,7 @@ body {
 
     @media only screen and (min-width: $bp-tablet) {
         background-image: url(../img/bg-desktop.png);
-        background-size: contain;
+        background-size: 100% 50%;
         font-size: 1.6rem;
     }
 }
